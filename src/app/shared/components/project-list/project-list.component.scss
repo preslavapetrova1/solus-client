@@ -11,8 +11,10 @@
   flex-wrap: wrap;
   padding-left: 0;
   align-content: flex-start;
+  width: 80%;
+  @include center(true, false);
 
-  .projects {
+  .project-title {
     margin-top: 20px;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
@@ -22,14 +24,18 @@
     color: black;
   }
 
-  .card {
+  .portfolio-item {
     margin-bottom: 100px;
     list-style-type: none;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 30%;
+    height: auto;
 
     img {
+      width: 100%;
+      height: 100%;
       &:hover {
         opacity: 0.5;
         cursor: pointer;

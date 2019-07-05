@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import {Project1Service} from "../../../project1.service";
+import {Component, OnInit} from '@angular/core';
+
 
 @Component({
   selector: 'app-photo-gallery',
@@ -8,12 +8,10 @@ import {Project1Service} from "../../../project1.service";
 })
 export class PhotoGalleryComponent implements OnInit {
 
-  public images=[];
-
-  constructor(private _project1Service: Project1Service) { }
-
-  ngOnInit() {
-    this.images=this._project1Service.getImages();
+  constructor() {
   }
 
+  ngOnInit() {
+
+  }
 }
