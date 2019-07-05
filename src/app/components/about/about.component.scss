@@ -1,0 +1,51 @@
+#about-us{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url("http://solusdesign.com/wp-content/uploads/2014/12/dsc_0069.jpg") no-repeat fixed center;
+  background-size: cover;
+  font-family: 'PT Sans', sans-serif;
+
+  #text-about-us{
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%);
+    top: 180px;
+    color: #ffffff;
+    line-height: 1.6;
+
+    p{
+      font-size: 2em;
+    }
+  }
+}
+
+#second-window{
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  background: url("http://solusdesign.com/wp-content/uploads/2014/12/dsc_0093.jpg") no-repeat fixed center;
+  background-size: cover;
+  font-family: 'PT Sans', sans-serif;
+
+  p{
+    display: block;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    color: #ffffff;
+    line-height: 1.6;
+    font-size: 1.5em;
+  }
+}
+
+

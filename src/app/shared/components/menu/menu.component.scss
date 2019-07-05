@@ -1,0 +1,23 @@
+#menu-container {
+  position: fixed;
+  top: 50px;
+  right: 80px;
+  width: 100px;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: #232323;
+
+}
+
+#menu-container:hover {
+  cursor: pointer;
+  color: #8d8d8d;
+}
+
+#menu-icon {
+  width: 30px;
+  height: 30px;
+}
