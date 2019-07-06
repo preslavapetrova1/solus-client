@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {PortfolioService} from '../../../services/portfolio/portfolio.service';
 
 @Component({
   selector: 'app-project-list',
@@ -6,8 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./project-list.component.scss']
 })
 export class ProjectListComponent implements OnInit {
+  projectPhotos: Array<number>;
 
-  constructor() { }
+  constructor(public ps: PortfolioService) {
+    for (let i = 0; i < this.ps.portfolio[0].photosCount; i++) {
+      this.projectPhotos.push(i);
+    }
+  }
 
   ngOnInit() {
   }

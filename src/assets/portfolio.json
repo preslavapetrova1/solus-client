@@ -1,0 +1,22 @@
+[
+  {
+    "id": "boutique",
+    "title": "Boutique Residence",
+    "photosCount": 22
+  },
+  {
+    "id": "peach-garden",
+    "title": "Peach Garden",
+    "photosCount": 7
+  },
+  {
+    "id": "saint-nicholas",
+    "title": "Saint Nicholas",
+    "photosCount": 13
+  },
+  {
+    "id": "viva4",
+    "title": "Viva 4 Residence",
+    "photosCount": 15
+  }
+]
