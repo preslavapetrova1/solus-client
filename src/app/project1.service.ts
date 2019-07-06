@@ -9,7 +9,6 @@ export class Project1Service {
   }
 
   getImages(){
-    return[
-    ];
+    return[];
   }
 }
