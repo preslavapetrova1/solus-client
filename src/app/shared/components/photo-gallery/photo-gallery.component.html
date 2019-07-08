@@ -1,1 +1,5 @@
-<p>photo-gallery works!</p>
+<div id="photos-container">
+  <div *ngFor="let i of galleryArray">
+    <img [src]="photosUrl+i+'.jpg'" alt="">
+  </div>
+</div>
