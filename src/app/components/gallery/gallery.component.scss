@@ -1,0 +1,21 @@
+@import "../../shared/mixins";
+@import "../../shared/constants";
+@import "../../shared/responsive";
+
+#page-title {
+  position: relative;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+
+  h1 {
+    position: absolute;
+    @include center(true, false);
+    @include removeSelection;
+    font-size: 60px;
+    letter-spacing: 0.1em;
+    line-height: 1.25;
+    font-family: "Arial", sans-serif;
+  }
+}

@@ -1,6 +1,6 @@
 <div id="projects-container">
-  <div *ngFor="let project of ps.portfolio" class="portfolio-item">
+  <div (click)="onClick(project)" *ngFor="let project of ps.portfolio" class="portfolio-item">
     <img [src]="'assets/images/projects/'+project.id+'/cover.jpg'" alt="" class="projectPicture">
-    <a href="" class="project-title">{{project.title}}</a>
+    <span  class="project-title">{{project.title}}</span>
   </div>
 </div>

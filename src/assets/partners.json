@@ -1,0 +1,77 @@
+[
+  {
+    "key": "Mechanisms",
+    "imgUrl": "assets/images/logos/mechanisms/",
+    "partners" : [
+      {
+        "externalUrl": "https://www.westag-getalit.com/en/"
+      },
+      {
+        "externalUrl": "https://www.kaindl.com/en/"
+      },
+      {
+        "externalUrl": "https://www.sonaearauco.com/en/"
+      },
+      {
+        "externalUrl": "https://www.egger.com/shop/bg_BG"
+      },
+      {
+        "externalUrl": "https://www.fundermax.at/en/"
+      },
+      {
+        "externalUrl": "https://www.westag-getalit.com/en/"
+      },
+      {
+        "externalUrl": "https://www.westag-getalit.com/en/"
+      }
+    ]
+  },
+  {
+    "key": "Materials",
+    "imgUrl": "assets/images/logos/materials/",
+    "partners" : [
+      {
+        "externalUrl": "https://www.blum.com/bg/bg/"
+      },
+      {
+        "externalUrl": "https://www.hafele.com/com/en/"
+      },
+      {
+        "externalUrl": "https://web.hettich.com/bg-bg/nachalo.html"
+      }
+    ]
+  },
+  {
+    "key": "Matraces",
+    "imgUrl": "assets/images/logos/matraces/",
+    "partners" : [
+      {
+        "externalUrl": "https://ted.bg/"
+      },
+      {
+        "externalUrl": "https://blian.bg/bg"
+      },
+      {
+        "externalUrl": "https://ekon-bg.com/"
+      },
+      {
+        "externalUrl": "https://magniflex.bg/"
+      }
+    ]
+  },
+  {
+    "key": "Other",
+    "imgUrl": "assets/images/logos/other/",
+    "partners" : [
+      {
+        "externalUrl": "http://en.skv.bg/"
+      },
+      {
+        "externalUrl": "https://www.blanco-germany.com/int/en/home/"
+      },
+      {
+        "externalUrl": "http://www.leksgroup.com/l_bg/"
+      }
+    ]
+  }
+]

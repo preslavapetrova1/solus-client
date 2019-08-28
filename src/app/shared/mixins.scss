@@ -35,7 +35,7 @@
   -webkit-user-drag: none;
 }
 
-@mixin removeDrag{
+@mixin removeDrag {
   -webkit-user-drag: none;
   -khtml-user-drag: none;
   -moz-user-drag: none;
@@ -49,4 +49,8 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+}
+
+@mixin removeOutline {
+  outline: none;
 }

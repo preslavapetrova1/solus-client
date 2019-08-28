@@ -2,21 +2,25 @@
   {
     "id": "boutique",
     "title": "Boutique Residence",
-    "photosCount": 22
+    "photosCount": 22,
+    "projectUrl": "app/components/projects/project/boutique"
   },
   {
     "id": "peach-garden",
     "title": "Peach Garden",
-    "photosCount": 7
+    "photosCount": 7,
+    "projectUrl": "app/components/projects/project/peach-garden"
   },
   {
     "id": "saint-nicholas",
     "title": "Saint Nicholas",
-    "photosCount": 13
+    "photosCount": 13,
+    "projectUrl": "app/components/projects/project/saint-nicholas"
   },
   {
     "id": "viva4",
     "title": "Viva 4 Residence",
-    "photosCount": 15
+    "photosCount": 15,
+    "projectUrl": "app/components/projects/project/viva4"
   }
 ]

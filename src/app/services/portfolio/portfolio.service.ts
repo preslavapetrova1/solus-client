@@ -1,7 +1,8 @@
 import {Injectable} from '@angular/core';
 
 import {HttpClient} from '@angular/common/http';
-import {IProject} from './IProject';
+import {IProject} from "./IProject";
+
 
 const PORTFOLIO_URL = 'assets/portfolio.json';
 

@@ -1,5 +1,7 @@
-<div id="photos-container">
-  <div *ngFor="let i of galleryArray">
-    <img [src]="photosUrl+i+'.jpg'" alt="">
+<div id="gallery">
+  <div id="photos-container" *ngFor="let i of galleryArray">
+    <img [src]="photosUrl+i+'.jpg'" alt="" (click)="activatePreview(i)">
   </div>
 </div>
+<app-preview *ngIf="previewOn" [photosUrl]="photosUrl" [photosCount]="photosCount"
+             [currentIndex]="currentIndex"></app-preview>

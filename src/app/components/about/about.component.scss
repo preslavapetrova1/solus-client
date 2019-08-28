@@ -1,4 +1,8 @@
-#about-us{
+@import "../../shared/mixins";
+@import "../../shared/constants";
+@import "../../shared/responsive";
+
+#about-us {
   position: relative;
   top: 0;
   left: 0;
@@ -8,7 +12,7 @@
   background-size: cover;
   font-family: 'PT Sans', sans-serif;
 
-  #text-about-us{
+  #text-about-us {
     position: absolute;
     text-align: center;
     left: 50%;
@@ -17,13 +21,13 @@
     color: #ffffff;
     line-height: 1.6;
 
-    p{
+    p {
       font-size: 2em;
     }
   }
 }
 
-#second-window{
+#second-window {
   position: relative;
   top: 0;
   left: 0;
@@ -34,7 +38,7 @@
   background-size: cover;
   font-family: 'PT Sans', sans-serif;
 
-  p{
+  p {
     display: block;
     position: absolute;
     text-align: center;
@@ -45,6 +49,64 @@
     color: #ffffff;
     line-height: 1.6;
     font-size: 1.5em;
+  }
+}
+
+#our-partners {
+  position: relative;
+  @include removeSelection;
+  width: 100%;
+  height: auto;
+  height: 1000px;
+  font-family: "Arial", sans-serif;
+  margin-bottom: 100px;
+
+
+  h3 {
+    top: 80px;
+    position: absolute;
+    @include center(true, false);
+    font-size: 2em;
+  }
+
+  #grid {
+    position: relative;
+    top: 220px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 60%;
+    @include center(true, false);
+
+    #column {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 20%;
+      font-size: 1.2em;
+      font-weight: bolder;
+
+      #logos {
+        width: 100%;
+        height: auto;
+
+        img{
+          width: 100%;
+          margin-top: 10px;
+
+          &:hover{
+            cursor: pointer;
+            opacity: 0.5;
+          }
+        }
+      }
+
+
+    }
+
+
   }
 }
 

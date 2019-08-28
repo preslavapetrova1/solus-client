@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {PartnersService} from "../../services/partners/partners.service";
+import {IPartner, IPartners} from "../../services/partners/IPartners";
 
 @Component({
   selector: 'app-about',
@@ -7,9 +9,36 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit() {
+  constructor(public partnerService: PartnersService) {
   }
 
+  redirect(partner:IPartner) {
+    window.open(partner.externalUrl, "_blank");
+  }
+
+  ngOnInit() {
+
+    // this.partnerService.getPartners().subscribe((partners: Array<IPartners>) => {
+    //   for (let i = 0; i < partners.length; i++) {
+    //     console.log(partners[i].key);
+    //     for (let j = 0; j < partners[i].partners.length; j++) {
+    //       console.log(partners[i].partners[j].externalUrl)
+    //
+    //     }
+    //
+    //   }
+
+    // partners.forEach((column: IPartners) => {
+    //   console.log(column.key)
+    //
+    //   column.partners.forEach((partner: IPartner) => {
+    //     console.log(partner.externalUrl)
+    //   })
+    // })
+    // });
+
+
+  }
 }
+
+

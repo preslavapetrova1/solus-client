@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-menu',
@@ -7,9 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
-  constructor() { }
+  menuOn: boolean;
 
-  ngOnInit() {
+  constructor() {
   }
 
+  ngOnInit() {
+    this.menuOn = false;
+  }
+
+  toggleMenu() {
+    this.menuOn = !this.menuOn;
+  }
+
+  closeMenu() {
+    this.menuOn=false;
+  }
 }

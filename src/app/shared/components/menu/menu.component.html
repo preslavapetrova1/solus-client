@@ -1,4 +1,13 @@
-<div id="menu-container">
+<div id="expanded-menu" *ngIf="menuOn">
+  <div id="menu-content">
+    <span routerLink="/home" (click)="closeMenu()">НАЧАЛО</span>
+    <span routerLink="/projects" (click)="closeMenu()">ПРОЕКТИ</span>
+    <span routerLink="/gallery" (click)="closeMenu()">ГАЛЕРИЯ</span>
+    <span routerLink="/about" (click)="closeMenu()">ЗА НАС</span>
+    <span routerLink="/contacts" (click)="closeMenu()">КОНТАКТИ</span>
+  </div>
+</div>
+<div id="menu-container" (click)="toggleMenu()">
   <span>МЕНЮ</span>
   <img id="menu-icon" [src]="'assets/images/menu/menu-button.png'" alt="">
 </div>

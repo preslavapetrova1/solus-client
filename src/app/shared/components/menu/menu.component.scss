@@ -1,3 +1,7 @@
+@import "../../../shared/mixins";
+@import "../../../shared/constants";
+@import "../../../shared/responsive";
+
 #menu-container {
   position: fixed;
   top: 50px;
@@ -10,14 +14,47 @@
   align-items: center;
   color: #232323;
 
+  &:hover {
+    cursor: pointer;
+    color: #8d8d8d;
+  }
+
+  #menu-icon {
+    width: 30px;
+    height: 30px;
+  }
 }
 
-#menu-container:hover {
-  cursor: pointer;
-  color: #8d8d8d;
-}
+#expanded-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 1);
 
-#menu-icon {
-  width: 30px;
-  height: 30px;
+  #menu-content {
+    position: absolute;
+    @include center (true, true);
+    @include removeSelection;
+    display: flex;
+    flex-direction: column;
+
+    span {
+      font-family: "Arial Black", sans-serif;
+      font-size: 80px;
+      color: white;
+      line-height: 1.6em;
+      width: 100%;
+      text-align: center;
+      @include removeSelection;
+      @include removeOutline;
+
+
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+      }
+    }
+  }
 }

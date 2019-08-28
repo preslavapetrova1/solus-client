@@ -1,11 +1,25 @@
-#logo-container{
+@import "../../../shared/mixins";
+@import "../../../shared/constants";
+@import "../../../shared/responsive";
+
+#logo-container {
   display: block;
   position: absolute;
-  top:20px;
-  left:20px;
-  width:200px;
+  top: 20px;
+  left: 20px;
+  width: 200px;
+  @include removeSelection;
+
+  #logo {
+    width: 100%;
+    display: block;
+    @include removeSelection;
+    @include removeOutline;
+
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
 }
-#logo{
-  width:100%;
-  display: block;
-}
+
