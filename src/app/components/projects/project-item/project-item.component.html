@@ -1,3 +1,11 @@
-<div id="wrapper" *ngIf="ps.portfolio">
-  <img [src]="'assets/images/projects/'+this.currentProjectId+'/cover.jpg'" alt="">
+<div id="wrapper">
+  <img [src]="'assets/images/projects/'+this.project.id+'/cover.jpg'" alt="">
+  <div id="text-box">
+    <h1>{{this.project.title}}</h1>
+  </div>
 </div>
+<div id="photo-container">
+  <app-photo-gallery [photosCount]="this.project.photosCount" [photosUrl]="'assets/images/projects/'
+      +this.project.id+'/'"></app-photo-gallery>
+</div>
+

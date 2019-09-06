@@ -3,5 +3,5 @@
     <img [src]="photosUrl+i+'.jpg'" alt="" (click)="activatePreview(i)">
   </div>
 </div>
-<app-preview *ngIf="previewOn" [photosUrl]="photosUrl" [photosCount]="photosCount"
+<app-preview *ngIf="previewOn" [photosCount]="photosCount"
              [currentIndex]="currentIndex"></app-preview>

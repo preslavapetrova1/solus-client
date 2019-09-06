@@ -7,12 +7,14 @@
   width: 100%;
   top: 0;
   left: 0;
+  @include removeDrag;
+  @include removeSelection;
 
 
   h1 {
     position: absolute;
     @include center(true, false);
-    @include removeSelection;
+    top: 100px;
     font-size: 60px;
     letter-spacing: 0.1em;
     line-height: 1.25;

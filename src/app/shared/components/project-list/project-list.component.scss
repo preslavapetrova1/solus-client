@@ -13,6 +13,8 @@
   align-content: flex-start;
   width: 80%;
   @include center(true, false);
+  @include removeDrag;
+  @include removeSelection;
 
   .project-title {
     margin-top: 20px;

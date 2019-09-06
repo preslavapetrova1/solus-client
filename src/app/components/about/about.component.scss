@@ -11,6 +11,8 @@
   background: url("http://solusdesign.com/wp-content/uploads/2014/12/dsc_0069.jpg") no-repeat fixed center;
   background-size: cover;
   font-family: 'PT Sans', sans-serif;
+  @include removeSelection;
+  @include removeDrag;
 
   #text-about-us {
     position: absolute;
@@ -37,6 +39,8 @@
   background: url("http://solusdesign.com/wp-content/uploads/2014/12/dsc_0093.jpg") no-repeat fixed center;
   background-size: cover;
   font-family: 'PT Sans', sans-serif;
+  @include removeSelection;
+  @include removeDrag;
 
   p {
     display: block;
@@ -60,6 +64,8 @@
   height: 1000px;
   font-family: "Arial", sans-serif;
   margin-bottom: 100px;
+  @include removeSelection;
+  @include removeDrag;
 
 
   h3 {

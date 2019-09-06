@@ -13,6 +13,8 @@
   justify-content: space-between;
   align-items: center;
   color: #232323;
+  @include removeDrag;
+  @include removeSelection;
 
   &:hover {
     cursor: pointer;
@@ -32,11 +34,12 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 1);
+  @include removeDrag;
+  @include removeSelection;
 
   #menu-content {
     position: absolute;
     @include center (true, true);
-    @include removeSelection;
     display: flex;
     flex-direction: column;
 
@@ -47,7 +50,6 @@
       line-height: 1.6em;
       width: 100%;
       text-align: center;
-      @include removeSelection;
       @include removeOutline;
 
 

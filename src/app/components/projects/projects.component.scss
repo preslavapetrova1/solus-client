@@ -10,6 +10,8 @@
   height: 100vh;
   background: url("http://solusdesign.com/wp-content/uploads/2014/12/dsc_0021-1.jpg") no-repeat fixed center;
   background-size: cover;
+  @include removeDrag;
+  @include removeSelection;
 
   #text-box {
     position: absolute;
@@ -53,4 +55,6 @@
   top: 100px;
   margin-bottom: 80px;
   left: 0;
+  @include removeDrag;
+  @include removeSelection;
 }

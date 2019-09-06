@@ -10,6 +10,7 @@ export class PreviewComponent implements OnInit {
   @Input() photosUrl: string;
   @Input() photosCount: number;
   @Input() currentIndex: number;
+  @Input() previewOn: boolean;
 
 
 
@@ -17,7 +18,10 @@ export class PreviewComponent implements OnInit {
   }
 
   ngOnInit() {
-
+    // this.previewOn=true;
   }
 
+  // closePreview(){
+  //   this.previewOn=false;
+  // }
 }

@@ -1,0 +1,45 @@
+@import "../../../shared/mixins";
+@import "../../../shared/constants";
+@import "../../../shared/responsive";
+
+#wrapper{
+  position: relative;
+  top: 0;
+  left: 0;
+  @include removeDrag;
+  @include removeSelection;
+
+  img{
+    background: no-repeat fixed center;
+    object-fit: cover;
+    font-family: 'PT Sans', sans-serif;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  #text-box {
+    position: absolute;
+    @include center(true, true);
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'PT Sans', sans-serif;
+    width: 70%;
+    height: 45%;
+
+    h1 {
+      position: absolute;
+      font-family: "Arial Black", sans-serif;
+      color: #ffffff;
+      font-size: 6em;
+      text-align: center;
+      @include center(true, true);
+      @include removeSelection;
+    }
+  }
+
+
+}
