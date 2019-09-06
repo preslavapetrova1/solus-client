@@ -17,25 +17,20 @@
   font-family:  Arial, sans-serif;
   @include removeDrag;
   @include removeSelection;
+
+  #footer-logo{
+    width: 40px;
+    font-size: 2em;
+    text-wrap: normal;
+    font-weight: bolder;
+  }
+
+  #address{
+    width: 150px;
+  }
+
+  #contacts{
+    width: 150px;
+  }
 }
 
-#footer-logo{
-  width: 40px;
-  font-size: 2em;
-  text-wrap: normal;
-  font-weight: bolder;
-  @include removeDrag;
-  @include removeSelection;
-}
-
-#address{
-  width: 150px;
-  @include removeDrag;
-  @include removeSelection;
-}
-
-#contacts{
-  width: 150px;
-  @include removeDrag;
-  @include removeSelection;
-}

@@ -25,11 +25,13 @@ export class PhotoGalleryComponent implements OnInit {
   ngOnInit() {
     this.galleryArray = [];
 
-    debugger;
-
     for (let i = 0; i < this.photosCount; i++) {
       this.galleryArray.push(i);
     }
+    this.previewOn = false;
+  }
+
+  closeAppPreview() {
     this.previewOn = false;
   }
 }

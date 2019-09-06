@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'app-preview',
@@ -10,18 +10,18 @@ export class PreviewComponent implements OnInit {
   @Input() photosUrl: string;
   @Input() photosCount: number;
   @Input() currentIndex: number;
-  @Input() previewOn: boolean;
-
+  @Output() xClicked: EventEmitter<any>;
 
 
   constructor() {
+    this.xClicked = new EventEmitter();
   }
 
   ngOnInit() {
-    // this.previewOn=true;
+
   }
 
-  // closePreview(){
-  //   this.previewOn=false;
-  // }
+  closePreview() {
+    this.xClicked.emit();
+  }
 }
