@@ -34,4 +34,18 @@ export class PhotoGalleryComponent implements OnInit {
   closeAppPreview() {
     this.previewOn = false;
   }
+
+  nextPage() {
+    this.currentIndex += 1;
+    if (this.currentIndex >= this.photosCount) {
+      this.currentIndex = 0;
+    }
+  }
+
+  previousPage() {
+    this.currentIndex -= 1;
+    if (this.currentIndex < 0) {
+      this.currentIndex = this.photosCount-1;
+    }
+  }
 }

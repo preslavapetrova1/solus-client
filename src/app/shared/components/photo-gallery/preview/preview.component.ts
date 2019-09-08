@@ -11,10 +11,14 @@ export class PreviewComponent implements OnInit {
   @Input() photosCount: number;
   @Input() currentIndex: number;
   @Output() xClicked: EventEmitter<any>;
+  @Output() rightArrowClicked: EventEmitter<any>;
+  @Output() leftArrowClicked: EventEmitter<any>;
 
 
   constructor() {
     this.xClicked = new EventEmitter();
+    this.rightArrowClicked = new EventEmitter();
+    this.leftArrowClicked = new EventEmitter();
   }
 
   ngOnInit() {
@@ -24,4 +28,14 @@ export class PreviewComponent implements OnInit {
   closePreview() {
     this.xClicked.emit();
   }
+
+
+  nextProject() {
+    this.rightArrowClicked.emit();
+  }
+
+  previousProject(){
+    this.leftArrowClicked.emit();
+  }
+
 }

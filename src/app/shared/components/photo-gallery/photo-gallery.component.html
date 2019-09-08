@@ -4,4 +4,5 @@
   </div>
 </div>
 <app-preview *ngIf="previewOn" [photosUrl]="photosUrl" [photosCount]="photosCount"
-             [currentIndex]="currentIndex" (xClicked)="closeAppPreview()"></app-preview>
+             [currentIndex]="currentIndex" (xClicked)="closeAppPreview()" (rightArrowClicked)="nextPage()"
+             (leftArrowClicked)="previousPage()"></app-preview>

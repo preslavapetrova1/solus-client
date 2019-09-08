@@ -3,8 +3,8 @@
     <img [src]="'assets/images/other-icons/close.png'" alt="" id="x-icon">
   </div>
   <div id="flex-container">
-    <img [src]="'assets/images/arrows/back.png'" alt="" class="arrow">
+    <img [src]="'assets/images/arrows/back.png'" alt="" class="arrow" (click)="previousProject()">
     <img [src]="photosUrl+currentIndex+'.jpg'" alt="" id="photo">
-    <img [src]="'assets/images/arrows/next.png'" alt="" class="arrow">
+    <img [src]="'assets/images/arrows/next.png'" alt="" class="arrow" (click)="nextProject()">
   </div>
 </div>
