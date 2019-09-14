@@ -2,8 +2,8 @@
   <div id="overlay"></div>
   <h1>КОНТАКТИ</h1>
 </div>
-<div id="contact-form">
-  <span>
+<div id="contact-area">
+  <div id="contact-details">
     <h3>АДРЕС</h3>
     <p>Булевард Сливница 72 <br/>Варна, България <br/></p>
     <h3>ЗА КОНТАКТИ</h3>
@@ -12,31 +12,40 @@
     <h3>ПОСЛЕДВАЙТЕ НИ</h3>
     <div id="social-media-icons">
       <div id="fcb">
-        <img [src]="'images/SM icons/facebook-logo-button.png'" alt="">
+        <img [src]="'assets/images/SM icons/facebook-logo-button.png'" alt=""
+             (click)="redirectToFcb()">
       </div>
     </div>
-  </span>
-  <form #userForm="ngForm">
-    <div class="form-group">
-      <label for="name">Вашето име</label>
-      <input type="text" id="name" class="form-control" name="userName" ngModel>
-    </div>
-    <div class="form-group">
-      <label for="phone">Телефон</label>
-      <input type="tel" id="phone" class="form-control" name="phone" ngModel>
-    </div>
-    <div class="form-group">
-      <label for="email">Имейл за връзка</label>
-      <input type="email" id="email" class="form-control" name="email" ngModel>
-    </div>
-    <div class="form-group">
-      <label for="subject">Тема</label>
-      <input type="text" id="subject" class="form-control" name="topic" ngModel>
-    </div>
-    <div class="form-group">
-      <label for="message">Вашето съобщение</label>
-      <textarea name="" id="message" cols="30" rows="10" ngModel></textarea>
-    </div>
-    <button class="btn btn-primary" type="submit">ИЗПРАТИ</button>
-  </form>
+  </div>
+  <div id="form-wrapper">
+    <form id="form" #userForm="ngForm">
+      <div id="name-phone-wrapper">
+        <div class="form-group1">
+          <input type="text" placeholder="Вашето име" required #name="ngModel" id="name" class="form-control" name="userName" ngModel>
+          <div class="alert alert-danger" *ngIf="name.touched && !name.valid">Моля, въведете име!</div>
+        </div>
+        <div class="form-group1">
+          <input type="tel" placeholder="Телефон" required #phone="ngModel" id="phone" class="form-control" name="phone" ngModel>
+          <div class="alert alert-danger" *ngIf="phone.touched && !phone.valid">Моля, въведете телефонен номер!</div>
+        </div>
+      </div>
+      <div class="form-group">
+        <input type="email" placeholder="Имейл за връзка" required #email="ngModel" id="email" class="form-control" name="email" ngModel>
+        <div class="alert alert-danger" *ngIf="email.touched && !email.valid">Моля, въведете имейл за обратна
+          връзка!</div>
+      </div>
+      <div class="form-group">
+        <input type="text" placeholder="Тема" id="subject" class="form-control" name="subject" ngModel>
+      </div>
+      <div class="form-group">
+        <textarea name="message" class="form-control" placeholder="Вашето съобщение" required #message="ngModel" id="message" cols="30" rows="10" ngModel></textarea>
+        <div class="alert alert-danger" *ngIf="message.touched && !message.valid">Моля, въведете
+          Вашето съобщение!</div>
+      </div>
+      <button class="btn btn-dark" type="submit">ИЗПРАТИ</button>
+    </form>
+  </div>
+</div>
+<div id="map-section">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2907.9611640339203!2d27.910611415313035!3d43.21030388897482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a45474ee9de73f%3A0xaacb55f1833aaeb9!2z0KHQvtC70YPRgSDQtNC40LfQsNC50L0!5e0!3m2!1sbg!2sbg!4v1568365925388!5m2!1sbg!2sbg" width="2000" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 </div>

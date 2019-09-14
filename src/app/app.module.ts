@@ -18,6 +18,7 @@ import {HttpClientModule} from '@angular/common/http';
 import { PreviewComponent } from './shared/components/photo-gallery/preview/preview.component';
 import { ProjectItemComponent } from './components/projects/project-item/project-item.component';
 import {FormsModule} from "@angular/forms";
+import {AgmCoreModule} from "@agm/core";
 
 @NgModule({
   declarations: [
