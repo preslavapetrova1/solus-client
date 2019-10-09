@@ -2,22 +2,32 @@
 @import "../../shared/constants";
 @import "../../shared/responsive";
 
-#page-title {
-  position: relative;
-  width: 100%;
+#wrapper{
+  position: absolute;
   top: 0;
   left: 0;
-  @include removeDrag;
-  @include removeSelection;
+  display: flex;
+  flex-direction: column;
+
+  #page-title {
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin-bottom: 100px;
+    @include removeDrag;
+    @include removeSelection;
 
 
-  h1 {
-    position: absolute;
-    @include center(true, false);
-    top: 100px;
-    font-size: 60px;
-    letter-spacing: 0.1em;
-    line-height: 1.25;
-    font-family: "Arial", sans-serif;
+    h1 {
+      position: absolute;
+      @include center(true, false);
+      top: 100px;
+      font-size: 60px;
+      letter-spacing: 0.1em;
+      line-height: 1.25;
+      font-family: "Arial", sans-serif;
+    }
   }
 }
+

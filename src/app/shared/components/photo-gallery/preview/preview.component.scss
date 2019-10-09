@@ -54,8 +54,13 @@
 
     #photo{
       position: center;
-      height:650px;
+      height:90%;
       width: auto;
+      @include less-than(tablet){
+        width: 70%;
+        height: auto;
+
+      }
     }
   }
 }

@@ -1,6 +1,8 @@
-<div id="projects-container">
-  <div (click)="onClick(project)" *ngFor="let project of ps.portfolio" class="portfolio-item">
-    <img [src]="'assets/images/projects/'+project.id+'/cover.jpg'" alt="" class="projectPicture">
-    <span  class="project-title">{{project.title}}</span>
+<div id="wrapper">
+  <div id="projects-container">
+    <div (click)="onClick(project)" *ngFor="let project of ps.portfolio" id="portfolio-item">
+      <img [src]="'assets/images/projects/'+project.id+'/cover.jpg'" alt="" id="projectPicture">
+      <span  id="project-title">{{project.title}}</span>
+    </div>
   </div>
 </div>

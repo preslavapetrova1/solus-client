@@ -45,12 +45,15 @@
 
     span {
       font-family: "Arial Black", sans-serif;
-      font-size: 80px;
+      font-size: 5em;
       color: white;
       line-height: 1.6em;
       width: 100%;
       text-align: center;
       @include removeOutline;
+      @include less-than(tablet){
+        font-size: 3em;
+      }
 
 
       &:hover {

@@ -2,118 +2,137 @@
 @import "../../shared/constants";
 @import "../../shared/responsive";
 
-#about-us {
-  position: relative;
+#wrapper {
+  position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: url("http://solusdesign.com/wp-content/uploads/2014/12/dsc_0069.jpg") no-repeat fixed center;
-  background-size: cover;
-  font-family: 'PT Sans', sans-serif;
-  @include removeSelection;
-  @include removeDrag;
+  display: flex;
+  flex-direction: column;
 
-  #text-about-us {
-    position: absolute;
-    text-align: center;
-    left: 50%;
-    transform: translate(-50%);
-    top: 180px;
-    color: #ffffff;
-    line-height: 1.6;
+  #about-us {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url("http://solusdesign.com/wp-content/uploads/2014/12/dsc_0069.jpg") no-repeat fixed center;
+    background-size: cover;
+    font-family: 'PT Sans', sans-serif;
+    @include removeSelection;
+    @include removeDrag;
 
-    p {
-      font-size: 2em;
+    #text-about-us {
+      position: absolute;
+      text-align: center;
+      left: 50%;
+      transform: translate(-50%);
+      top: 180px;
+      color: #ffffff;
+      line-height: 1.6;
+      @include less-than(tablet){
+        width: 80%;
+      }
+
+      p {
+        margin-top: 50px;
+        font-size: 2em;
+        @include less-than(tablet){
+          font-size: 1.5em;
+        }
+      }
     }
   }
-}
 
-#second-window {
-  position: relative;
-  top: 0;
-  left: 0;
-  display: block;
-  width: 100vw;
-  height: 100vh;
-  background: url("http://solusdesign.com/wp-content/uploads/2014/12/dsc_0093.jpg") no-repeat fixed center;
-  background-size: cover;
-  font-family: 'PT Sans', sans-serif;
-  @include removeSelection;
-  @include removeDrag;
-
-  p {
-    display: block;
-    position: absolute;
-    text-align: center;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    color: #ffffff;
-    line-height: 1.6;
-    font-size: 1.5em;
-  }
-}
-
-#our-partners {
-  position: relative;
-  @include removeSelection;
-  width: 100%;
-  height: auto;
-  height: 1000px;
-  font-family: "Arial", sans-serif;
-  margin-bottom: 100px;
-  @include removeSelection;
-  @include removeDrag;
-
-
-  h3 {
-    top: 80px;
-    position: absolute;
-    @include center(true, false);
-    font-size: 2em;
-  }
-
-  #grid {
+  #second-window {
     position: relative;
-    top: 220px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 60%;
-    @include center(true, false);
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background: url("http://solusdesign.com/wp-content/uploads/2014/12/dsc_0093.jpg") no-repeat fixed center;
+    background-size: cover;
+    font-family: 'PT Sans', sans-serif;
+    @include removeSelection;
+    @include removeDrag;
 
-    #column {
+    p {
+      display: block;
+      position: absolute;
+      text-align: center;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 80%;
+      color: #ffffff;
+      line-height: 1.6;
+      font-size: 2em;
+      @include less-than(tablet){
+        font-size: 1.5em;
+      }
+    }
+  }
+
+  #our-partners {
+    position: relative;
+    @include removeSelection;
+    width: 100%;
+    height: auto;
+    font-family: "Arial", sans-serif;
+    margin-bottom: 150px;
+    @include removeSelection;
+    @include removeDrag;
+
+
+    h3 {
+      top: 80px;
+      position: absolute;
+      text-align: center;
+      @include center(true, false);
+      font-size: 2em;
+    }
+
+    #grid {
+      position: relative;
+      top: 200px;
       display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 20%;
-      font-size: 1.2em;
-      font-weight: bolder;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 60%;
+      margin-bottom: 150px;
+      @include center(true, false);
 
-      #logos {
-        width: 100%;
-        height: auto;
+      #column {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 30px;
+        width: 100px;
+        font-size: 1.2em;
+        font-weight: bolder;
+        margin-top: 50px;
 
-        img{
+        #logos {
           width: 100%;
-          margin-top: 10px;
+          height: auto;
 
-          &:hover{
-            cursor: pointer;
-            opacity: 0.5;
+          img {
+            width: 100%;
+            margin-top: 10px;
+
+            &:hover {
+              cursor: pointer;
+              opacity: 0.5;
+            }
           }
         }
       }
-
-
     }
-
-
   }
 }
+
 
 

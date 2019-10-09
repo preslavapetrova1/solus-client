@@ -2,54 +2,83 @@
 @import "../../shared/constants";
 @import "../../shared/responsive";
 
-#frontPage {
-  position: relative;
+#wrapper {
+  position: absolute;
   top: 0;
   left: 0;
-  display: block;
-  width: 100vw;
-  height: 100vh;
-  background: url("http://solusdesign.com/wp-content/uploads/2014/12/mainpage-2048x1365.jpg") no-repeat fixed center;
-  background-size: cover;
-  font-family: 'PT Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
 
-  #site-title {
-    position: absolute;
-    @include center(true, true);
-    @include removeSelection;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  #frontPage {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background: url("http://solusdesign.com/wp-content/uploads/2014/12/mainpage-2048x1365.jpg") no-repeat fixed center;
+    background-size: cover;
+    font-family: 'PT Sans', sans-serif;
 
-    h1 {
-      font-family: "Arial Black", sans-serif;
-      color: #161616;
-      font-size: 6em;
+    #site-title {
+      position: absolute;
+      @include center(true, true);
+      @include removeSelection;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      h1 {
+        font-family: "Arial Black", sans-serif;
+        color: #161616;
+        font-size: 6em;
+        text-align: center;
+        text-transform: uppercase;
+        @include less-than(tablet) {
+          font-size: 3.5em;
+        }
+      }
+    }
+
+    .btn {
+      background-color: #161616;
+      color: white;
+      text-decoration: none;
+      font-family: Arial, serif;
+      border-radius: 40px;
       text-align: center;
-      text-transform: uppercase;
+      width: 200px;
+      height: 40px;
+      bottom: 180px;
+      position: absolute;
+      @include center(true, false);
+
+      &:hover {
+        cursor: pointer;
+        background-color: #333333;
+      }
+    }
+  }
+
+  #section-b {
+    position: relative;
+    width: 100%;
+    left: 0;
+
+
+    h3 {
+      position: absolute;
+      @include center(true, false);
+      margin-top: 100px;
+      font-size: 2em;
+      text-align: center;
+      width: 100%;
     }
   }
 }
 
-.btn {
-  background-color: #161616;
-  color: white;
-  text-decoration: none;
-  font-family: Arial, serif;
-  border-radius: 40px;
-  text-align: center;
-  width: 200px;
-  height: 40px;
-  bottom: 180px;
-  position: absolute;
-  @include center(true,false);
 
-  &:hover {
-    cursor: pointer;
-    background-color: #333333;
-  }
-}
 
 
 

@@ -5,25 +5,22 @@
 
 #gallery {
   position: relative;
-  top: 250px;
+  margin-top: 150px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  padding-left: 0;
-  align-content: flex-start;
   width: 80%;
   height: 100%;
   overflow: auto;
+  margin-bottom: 150px;
   @include center(true, false);
   @include removeDrag;
   @include removeSelection;
-  margin-bottom: 100px;
 
   #photos-container {
     position: relative;
     margin-bottom: 100px;
-    list-style-type: none;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

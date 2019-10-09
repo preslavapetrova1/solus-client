@@ -19,6 +19,7 @@ import { PreviewComponent } from './shared/components/photo-gallery/preview/prev
 import { ProjectItemComponent } from './components/projects/project-item/project-item.component';
 import {FormsModule} from "@angular/forms";
 import {AgmCoreModule} from "@agm/core";
+import { ScrollUpButtonComponent } from './shared/components/scroll-up-button/scroll-up-button.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import {AgmCoreModule} from "@agm/core";
     ProjectListComponent,
     PhotoGalleryComponent,
     PreviewComponent,
-    ProjectItemComponent
+    ProjectItemComponent,
+    ScrollUpButtonComponent
   ],
   imports: [
     BrowserModule,

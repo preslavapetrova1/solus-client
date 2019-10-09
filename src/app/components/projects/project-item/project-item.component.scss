@@ -2,44 +2,58 @@
 @import "../../../shared/constants";
 @import "../../../shared/responsive";
 
-#wrapper{
-  position: relative;
+#wrapper {
+  position: absolute;
   top: 0;
   left: 0;
-  @include removeDrag;
-  @include removeSelection;
+  display: flex;
+  flex-direction: column;
 
-  img{
-    background: no-repeat fixed center;
-    object-fit: cover;
-    font-family: 'PT Sans', sans-serif;
-    display: block;
-    width: 100vw;
-    height: 100vh;
-  }
+  #cover {
+    position: relative;
+    top: 0;
+    left: 0;
+    @include removeDrag;
+    @include removeSelection;
 
-  #text-box {
-    position: absolute;
-    @include center(true, true);
-    background: rgba(0, 0, 0, 0.4);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: 'PT Sans', sans-serif;
-    width: 70%;
-    height: 45%;
+    img {
+      background: no-repeat fixed center;
+      object-fit: cover;
+      font-family: 'PT Sans', sans-serif;
+      display: block;
+      width: 100vw;
+      height: 100vh;
+    }
 
-    h1 {
+    #text-box {
       position: absolute;
-      font-family: "Arial Black", sans-serif;
-      color: #ffffff;
-      font-size: 6em;
-      text-align: center;
       @include center(true, true);
-      @include removeSelection;
+      background: rgba(0, 0, 0, 0.4);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: 'PT Sans', sans-serif;
+      width: 70%;
+      height: 45%;
+      @include less-than(tablet){
+        width: 80%;
+        height: 30%;
+      }
+
+      h1 {
+        position: absolute;
+        font-family: "Arial Black", sans-serif;
+        color: #ffffff;
+        font-size: 6em;
+        text-align: center;
+        @include center(true, true);
+        @include removeSelection;
+        @include less-than(tablet){
+          font-size: 3.5em;
+        }
+      }
     }
   }
-
-
 }
+
