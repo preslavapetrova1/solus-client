@@ -43,16 +43,32 @@
       width: 385px;
       height: 240px;
 
-      &:hover{
-        img{
-          opacity: 0.5;
-          cursor: pointer;
-        }
+      #projectPicture{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: center;
+
+        //&:hover{
+        //  img{
+        //    opacity: 0.5;
+        //    cursor: pointer;
+        //  }
+
+          &:hover,
+          &:focus{
+            transform: scale(1.2);
+          }
+      }
+
+
+
+
 
         #project-title{
           color: #333333;
         }
-      }
+
 
       img {
         display: block;

@@ -1,0 +1,16 @@
+#arrow-container{
+  position: relative;
+  float: right;
+  right: 40px;
+  width: 50px;
+  height: 100%;
+  margin: 20px;
+
+  #arrow{
+    width: 100%;
+
+    &:hover{
+      cursor: pointer;
+    }
+  }
+}

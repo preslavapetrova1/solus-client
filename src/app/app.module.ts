@@ -20,6 +20,7 @@ import { ProjectItemComponent } from './components/projects/project-item/project
 import {FormsModule} from "@angular/forms";
 import {AgmCoreModule} from "@agm/core";
 import { ScrollUpButtonComponent } from './shared/components/scroll-up-button/scroll-up-button.component';
+import {TranslateModule} from "@ngx-translate/core";
 
 @NgModule({
   declarations: [
@@ -36,13 +37,15 @@ import { ScrollUpButtonComponent } from './shared/components/scroll-up-button/sc
     PhotoGalleryComponent,
     PreviewComponent,
     ProjectItemComponent,
-    ScrollUpButtonComponent
+    ScrollUpButtonComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    TranslateModule.forRoot()
   ],
   providers: [PortfolioService],
   bootstrap: [AppComponent]

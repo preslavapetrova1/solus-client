@@ -1,0 +1,33 @@
+[
+  {
+    "HOME_COVER": "ИНТЕРИОРЕН ДИЗАЙН",
+    "HOME_COVER_BUTTON": "НАШИТЕ ПРОЕКТИ",
+    "SELECTED_PROJECTS": "ИЗБРАНИ ПРОЕКТИ",
+    "BOUTIQUE_RESIDENCE":"БУТИК РЕЗИДЕНС",
+    "PEACH_GARDEN":"КАЙСИЕВА ГРАДИНА",
+    "SAINT_NICHOLAS":"СВЕТИ НИКОЛА",
+    "VIVA4":"ВИВА 4",
+    "PROJECTS_COVER": "НАШИТЕ ПРОЕКТИ",
+    "PROJECTS_SELECTED_PROJECTS": "ИЗБРАНИ ПРОЕКТИ",
+    "GALLERY": "ГАЛЕРИЯ",
+    "ABOUT": "ЗА НАС",
+    "ABOUT_COVER": "СОЛУС ДИЗАЙН Е ВОДЕЩА КОМПАНИЯ В ПРОИЗВОДСТВОТО НА ВИСОКОКАЧЕСТВЕНА КОРПУСНА МЕБЕЛ. ЗАТВЪРЖДАВАМЕ ПОВЕЧЕ ОТ 20\n        ГОДИНИ ПОЗИЦИЯТА СИ НА ПАЗАРА БЛАГОДАРЕНИЯ НА ИНОВАЦИОННО МИСЛЕНЕ, ПРОФЕСИОНАЛИЗЪМ И ПЕРСОНАЛНО ОТНОШЕНИЕ КЪМ\n        ВСЕКИ КЛИЕНТ.",
+    "ABOUT_COVER2": "НИЕ ПРЕДЛАГАМЕ СТАНДАРТНО ОБЗАВЕЖДАНЕ НА СПАЛНИ, КУХНИ И ДЕТСКИ СТАИ КАКТО И МЕБЕЛИ ПО ИНДИВИДУАЛЕН ПРОЕКТ.<br><br>\n      НАШАТА ОСНОВНА ЦЕЛ Е ДА СЪДЕЙСТВАМЕ НА КЛИЕНТИТЕ СИ В ИЗГРАЖДАНЕТО НА МЕЧТАНИЯ ОТ ТЯХ ДОМ КАТО ИЗПОЛЗВАМЕ\n      ЗНАНИЯТА СИ В ОБЛАСТТА НА ИНТЕРИОРЕН И ИНЖЕНЕРЕН ДИЗАЙН.",
+    "ABOUT_PARTNERS": "НАШИТЕ ПАРТНЬОРИ",
+    "CONTACTS": "КОНТАКТИ",
+    "ADDRESS": "АДРЕС",
+    "ADDRESS_DETAILS_LINE1": "Булевард Сливница 72",
+    "ADDRESS_DETAILS_LINE1": "Варна, България",
+    "CONTACTS_FOR_CONTACTS": "ЗА КОНТАКТИ",
+    "FOR_CONTACTS_NAME": "МИЛКА РАДЕВА",
+    "CONTACTS_FOLLOW_US": "ПОСЛЕДВАЙТЕ НИ",
+    "CONTACTS_CONTACT_FORM_NAME": "ИМЕ",
+    "CONTACTS_CONTACT_FORM_PHONE": "ТЕЛЕФОН",
+    "CONTACTS_CONTACT_FORM_EMAIL": "ИМЕЙЛ ЗА ОБРАТНА ВРЪЗКА",
+    "CONTACTS_CONTACT_FORM_SUBJECT": "ТЕМА",
+    "CONTACTS_CONTACT_FORM_MESSAGE": "СЪОБЩЕНИЕ",
+    "CONTACTS_CONTACT_FORM_SEND": "ИЗПРАТИ",
+    "FOOTER_LOGO": "СОЛУС ООД",
+    "FOOTER_CONTACT_US": "СВЪРЖЕТЕ СЕ С НАС"
+  }
+]
