@@ -1,12 +1,16 @@
 <div id="expanded-menu" *ngIf="menuOn">
   <div id="menu-content">
-    <span routerLink="/home" (click)="closeMenu()">НАЧАЛО</span>
-    <span routerLink="/projects" (click)="closeMenu()">ПРОЕКТИ</span>
-    <span routerLink="/gallery" (click)="closeMenu()">ГАЛЕРИЯ</span>
-    <span routerLink="/about" (click)="closeMenu()">ЗА НАС</span>
-    <span routerLink="/contacts" (click)="closeMenu()">КОНТАКТИ</span>
+    <span [routerLink]="this.ls.currentLanguageKey + '/home'" (click)="closeMenu()">{{this.ls.translate('MENU_HOME')}}</span>
+    <span [routerLink]="this.ls.currentLanguageKey + '/projects'" (click)="closeMenu()">{{this.ls.translate('MENU_PROJECTS')}}</span>
+    <span [routerLink]="this.ls.currentLanguageKey + '/gallery'" (click)="closeMenu()">{{this.ls.translate('MENU_GALLERY')}}</span>
+    <span [routerLink]="this.ls.currentLanguageKey + '/about'" (click)="closeMenu()">{{this.ls.translate('MENU_ABOUT')}}</span>
+    <span [routerLink]="this.ls.currentLanguageKey + '/contacts'" (click)="closeMenu()">{{this.ls.translate('MENU_CONTACTS')}}</span>
   </div>
 </div>
-<div id="menu-container" (click)="toggleMenu()">
-  <img id="menu-icon" [src]="'assets/images/menu/menu-button.png'" alt="">
+<div id="menu-languages">
+  <div class="language" (click)="this.ls.setLanguage('bg')">BG</div>
+  <div class="language"(click)="this.ls.setLanguage('en')">EN</div>
+  <div id="menu-icon-container" (click)="toggleMenu()">
+    <img id="menu-icon" [src]="'assets/images/menu/menu-button.png'" alt="">
+  </div>
 </div>

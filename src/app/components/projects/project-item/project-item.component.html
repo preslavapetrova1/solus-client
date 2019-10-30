@@ -2,7 +2,7 @@
   <div id="cover">
     <img [src]="'assets/images/projects/'+this.project.id+'/cover.jpg'" alt="">
     <div id="text-box">
-      <h1>{{this.project.title}}</h1>
+      <h1>{{this.ls.translate(this.getProjectByKey())}}</h1>
     </div>
   </div>
   <div id="photo-container">

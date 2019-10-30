@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
 import {PortfolioService} from './services/portfolio/portfolio.service';
 import {createTokenForReference} from "@angular/compiler/src/identifiers";
+import {LanguagesService} from "./services/languages/languages.service";
 
 @Component({
   selector: 'app-root',
@@ -11,7 +12,7 @@ import {createTokenForReference} from "@angular/compiler/src/identifiers";
 export class AppComponent {
   title = 'solus-site';
 
-  constructor(public ps: PortfolioService) {
+  constructor(public ps: PortfolioService, public ls: LanguagesService) {
   }
 
 }

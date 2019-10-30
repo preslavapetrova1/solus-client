@@ -1,16 +1,16 @@
 <div id="wrapper">
   <div id="main-container">
     <div id="overlay"></div>
-    <h1>КОНТАКТИ</h1>
+    <h1>{{this.ls.translate('CONTACTS')}}</h1>
   </div>
   <div id="contact-area">
     <div id="contact-details">
-      <h3>АДРЕС</h3>
-      <p>Булевард Сливница 72 <br/>Варна, България <br/></p>
-      <h3>ЗА КОНТАКТИ</h3>
-      <p>Милка Мойсеева <br/>+35952 607691<br/>
+      <h3>{{this.ls.translate('ADDRESS')}}</h3>
+      <p>{{this.ls.translate('ADDRESS_DETAILS_LINE1')}} <br/>{{this.ls.translate('ADDRESS_DETAILS_LINE2')}} <br/></p>
+      <h3>{{this.ls.translate('CONTACTS_FOR_CONTACTS')}}</h3>
+      <p>{{this.ls.translate('FOR_CONTACTS_NAME')}} <br/>+35952 607691<br/>
         <a href="">solusvarna@gmail.com</a></p>
-      <h3>ПОСЛЕДВАЙТЕ НИ</h3>
+      <h3>{{this.ls.translate('CONTACTS_FOLLOW_US')}}</h3>
       <div id="social-media-icons">
         <div id="fcb">
           <img [src]="'assets/images/sm-icons/facebook-logo-button.png'" alt=""
@@ -22,34 +22,30 @@
       <form id="form" #userForm="ngForm">
         <div id="name-phone-wrapper">
           <div class="form-group1">
-            <input type="text" placeholder="Вашето име" required #name="ngModel" id="name" class="form-control"
+            <input type="text" [placeholder]="this.ls.translate('CONTACTS_CONTACT_FORM_NAME')" required #name="ngModel" id="name" class="form-control"
                    name="userName" ngModel>
-            <div class="alert alert-danger" *ngIf="name.touched && !name.valid">Моля, въведете име!</div>
+            <div class="alert alert-danger" *ngIf="name.touched && !name.valid">{{this.ls.translate('CONTACTS_CONTACT_FORM_NAME_WARNING')}}</div>
           </div>
           <div class="form-group1">
-            <input type="tel" placeholder="Телефон" required #phone="ngModel" id="phone" class="form-control"
+            <input type="tel" [placeholder]="this.ls.translate('CONTACTS_CONTACT_FORM_PHONE')" required #phone="ngModel" id="phone" class="form-control"
                    name="phone" ngModel>
-            <div class="alert alert-danger" *ngIf="phone.touched && !phone.valid">Моля, въведете телефонен номер!</div>
+            <div class="alert alert-danger" *ngIf="phone.touched && !phone.valid">{{this.ls.translate('CONTACTS_CONTACT_FORM_PHONE_WARNING')}}</div>
           </div>
         </div>
         <div class="form-group">
-          <input type="email" placeholder="Имейл за връзка" required #email="ngModel" id="email" class="form-control"
+          <input type="email" [placeholder]="this.ls.translate('CONTACTS_CONTACT_FORM_EMAIL')" required #email="ngModel" id="email" class="form-control"
                  name="email" ngModel>
-          <div class="alert alert-danger" *ngIf="email.touched && !email.valid">Моля, въведете имейл за обратна
-            връзка!
-          </div>
+          <div class="alert alert-danger" *ngIf="email.touched && !email.valid">{{this.ls.translate('CONTACTS_CONTACT_FORM_EMAIL_WARNING')}}</div>
         </div>
         <div class="form-group">
-          <input type="text" placeholder="Тема" id="subject" class="form-control" name="subject" ngModel>
+          <input type="text" [placeholder]="this.ls.translate('CONTACTS_CONTACT_FORM_SUBJECT')" id="subject" class="form-control" name="subject" ngModel>
         </div>
         <div class="form-group">
-          <textarea name="message" class="form-control" placeholder="Вашето съобщение" required #message="ngModel"
+          <textarea name="message" class="form-control" [placeholder]="this.ls.translate('CONTACTS_CONTACT_FORM_MESSAGE')" required #message="ngModel"
                     id="message" cols="30" rows="10" ngModel></textarea>
-          <div class="alert alert-danger" *ngIf="message.touched && !message.valid">Моля, въведете
-            Вашето съобщение!
-          </div>
+          <div class="alert alert-danger" *ngIf="message.touched && !message.valid">{{this.ls.translate('CONTACTS_CONTACT_FORM_MESSAGE_WARNING')}}</div>
         </div>
-        <button class="btn btn-dark" type="submit">ИЗПРАТИ</button>
+        <button class="btn btn-dark" type="submit">{{this.ls.translate('CONTACTS_CONTACT_FORM_SEND')}}</button>
       </form>
     </div>
   </div>

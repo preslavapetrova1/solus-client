@@ -1,19 +1,15 @@
 <div id="wrapper">
   <div id="about-us">
     <div id="text-about-us">
-      <h3>ЗА НАС</h3>
-      <p>СОЛУС ДИЗАЙН Е ВОДЕЩА КОМПАНИЯ В ПРОИЗВОДСТВОТО НА ВИСОКОКАЧЕСТВЕНА КОРПУСНА МЕБЕЛ. ЗАТВЪРЖДАВАМЕ ПОВЕЧЕ ОТ 20
-        ГОДИНИ ПОЗИЦИЯТА СИ НА ПАЗАРА БЛАГОДАРЕНИЯ НА ИНОВАЦИОННО МИСЛЕНЕ, ПРОФЕСИОНАЛИЗЪМ И ПЕРСОНАЛНО ОТНОШЕНИЕ КЪМ
-        ВСЕКИ КЛИЕНТ.</p>
+      <h3>{{this.ls.translate('ABOUT')}}</h3>
+      <p>{{this.ls.translate('ABOUT_COVER')}}</p>
     </div>
   </div>
   <div id="second-window">
-    <p>НИЕ ПРЕДЛАГАМЕ СТАНДАРТНО ОБЗАВЕЖДАНЕ НА СПАЛНИ, КУХНИ И ДЕТСКИ СТАИ КАКТО И МЕБЕЛИ ПО ИНДИВИДУАЛЕН ПРОЕКТ.<br><br>
-      НАШАТА ОСНОВНА ЦЕЛ Е ДА СЪДЕЙСТВАМЕ НА КЛИЕНТИТЕ СИ В ИЗГРАЖДАНЕТО НА МЕЧТАНИЯ ОТ ТЯХ ДОМ КАТО ИЗПОЛЗВАМЕ
-      ЗНАНИЯТА СИ В ОБЛАСТТА НА ИНТЕРИОРЕН И ИНЖЕНЕРЕН ДИЗАЙН.</p>
+    <p>{{this.ls.translate('ABOUT_COVER2')}}</p>
   </div>
   <div id="our-partners" *ngIf="partnerService.partners">
-    <h3>НАШИТЕ ПАРТНЬОРИ</h3>
+    <h3>{{this.ls.translate('ABOUT_PARTNERS')}}</h3>
     <div id="grid">
       <div id="column" *ngFor="let column of partnerService.partners">
         {{column.key}}

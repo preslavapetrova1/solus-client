@@ -29,4 +29,9 @@ export interface ILanguage {
   CONTACTS_CONTACT_FORM_SEND: string;
   FOOTER_LOGO: string;
   FOOTER_CONTACT_US: string;
+  "MENU_HOME": string;
+  "MENU_PROJECTS": string;
+  "MENU_GALLERY": string;
+  "MENU_ABOUT": string;
+  "MENU_CONTACTS": string;
 }

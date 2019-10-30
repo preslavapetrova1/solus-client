@@ -49,21 +49,11 @@
         object-fit: cover;
         position: center;
 
-        //&:hover{
-        //  img{
-        //    opacity: 0.5;
-        //    cursor: pointer;
-        //  }
-
-          &:hover,
-          &:focus{
-            transform: scale(1.2);
-          }
+        &:hover {
+          opacity: 0.5;
+          cursor: pointer;
+        }
       }
-
-
-
-
 
         #project-title{
           color: #333333;

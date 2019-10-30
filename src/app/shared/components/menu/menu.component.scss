@@ -2,23 +2,36 @@
 @import "../../../shared/constants";
 @import "../../../shared/responsive";
 
-#menu-container {
-  position: fixed;
-  top: 50px;
-  right: 80px;
+#menu-languages{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 90px;
+  top: 20px;
+  right: 40px;
   color: #232323;
   @include removeDrag;
   @include removeSelection;
 
-
-
-  #menu-icon {
-    width: 30px;
-    height: 30px;
-
+  .language{
     &:hover {
       cursor: pointer;
       opacity: 0.5;
+    }
+  }
+
+  #menu-icon-container {
+
+    #menu-icon {
+      width: 30px;
+      height: 30px;
+
+      &:hover {
+        cursor: pointer;
+        opacity: 0.5;
+      }
     }
   }
 }
@@ -50,7 +63,6 @@
       @include less-than(tablet){
         font-size: 3em;
       }
-
 
       &:hover {
         cursor: pointer;

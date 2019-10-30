@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {PartnersService} from "../../services/partners/partners.service";
 import {IPartner, IPartners} from "../../services/partners/IPartners";
+import {LanguagesService} from "../../services/languages/languages.service";
 
 @Component({
   selector: 'app-about',
@@ -9,7 +10,7 @@ import {IPartner, IPartners} from "../../services/partners/IPartners";
 })
 export class AboutComponent implements OnInit {
 
-  constructor(public partnerService: PartnersService) {
+  constructor(public partnerService: PartnersService, public ls: LanguagesService) {
   }
 
   redirect(partner:IPartner) {

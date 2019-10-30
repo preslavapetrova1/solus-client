@@ -8,9 +8,9 @@ import {ProjectsComponent} from "./components/projects/projects.component";
 import {ProjectItemComponent} from "./components/projects/project-item/project-item.component";
 
 const routes: Routes = [
-  // {path:'', redirectTo: 'bg', pathMatch:'full'},
-  // {path: ':lang',
-  //     children:[
+  {path:'', redirectTo: 'bg', pathMatch:'full'},
+  {path: ':lang',
+      children:[
         {path:'',redirectTo:'home',pathMatch:'full'},
         {path:'home', component:HomeComponent},
         {path:'projects', component:ProjectsComponent},
@@ -18,8 +18,8 @@ const routes: Routes = [
         {path:'gallery', component:GalleryComponent},
         {path:'about', component:AboutComponent},
         {path:'contacts',component:ContactsComponent}
-        // ]
-  // }
+        ]
+  }
 ];
 
 @NgModule({

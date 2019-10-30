@@ -2,7 +2,7 @@
   <div id="projects-container">
     <div (click)="onClick(project)" *ngFor="let project of ps.portfolio" id="portfolio-item">
       <img [src]="'assets/images/projects/'+project.id+'/cover.jpg'" alt="" id="projectPicture">
-      <span  id="project-title">{{project.title}}</span>
+      <span  id="project-title">{{this.ls.translate(getProjectByKey(project.id))}}</span>
     </div>
   </div>
 </div>

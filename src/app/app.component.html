@@ -1,6 +1,6 @@
 <div id="page-content">
-  <router-outlet *ngIf="ps.portfolio"></router-outlet>
+  <router-outlet *ngIf="this.ps.portfolio && this.ls.available" ></router-outlet>
 </div>
 <app-logo></app-logo>
-<app-menu></app-menu>
+<app-menu *ngIf="this.ls.available"></app-menu>
 

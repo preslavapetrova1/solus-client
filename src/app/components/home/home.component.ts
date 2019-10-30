@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {LanguagesService} from "../../services/languages/languages.service";
 
 @Component({
   selector: 'app-home',
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
 
   ASSETS_URL: string = 'assets/images/home/';
-  constructor() {
+  constructor(public ls:LanguagesService) {
   }
 
   ngOnInit() {
