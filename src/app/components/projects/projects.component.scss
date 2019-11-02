@@ -57,6 +57,9 @@
         margin: 0;
         font-size: 1em;
         letter-spacing: 4px;
+        @include less-than(tablet){
+          font-size: 0.1em;
+        }
       }
     }
   }

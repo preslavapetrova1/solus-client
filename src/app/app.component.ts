@@ -1,6 +1,5 @@
 import {Component} from '@angular/core';
 import {PortfolioService} from './services/portfolio/portfolio.service';
-import {createTokenForReference} from "@angular/compiler/src/identifiers";
 import {LanguagesService} from "./services/languages/languages.service";
 
 @Component({

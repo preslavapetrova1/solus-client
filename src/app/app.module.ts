@@ -1,6 +1,5 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
-
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {HomeComponent} from './components/home/home.component';
@@ -18,9 +17,6 @@ import {HttpClientModule} from '@angular/common/http';
 import { PreviewComponent } from './shared/components/photo-gallery/preview/preview.component';
 import { ProjectItemComponent } from './components/projects/project-item/project-item.component';
 import {FormsModule} from "@angular/forms";
-import {AgmCoreModule} from "@agm/core";
-import { ScrollUpButtonComponent } from './shared/components/scroll-up-button/scroll-up-button.component';
-import {TranslateModule} from "@ngx-translate/core";
 
 @NgModule({
   declarations: [
@@ -37,15 +33,12 @@ import {TranslateModule} from "@ngx-translate/core";
     PhotoGalleryComponent,
     PreviewComponent,
     ProjectItemComponent,
-    ScrollUpButtonComponent,
-
-  ],
+    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    TranslateModule.forRoot()
   ],
   providers: [PortfolioService],
   bootstrap: [AppComponent]

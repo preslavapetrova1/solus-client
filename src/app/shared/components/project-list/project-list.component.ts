@@ -21,7 +21,6 @@ export class ProjectListComponent implements OnInit {
   }
 
   onClick(project: IProject) {
-    console.log(project.id);
     this.router.navigate([this.ls.currentLanguageKey + '/projects', project.id])
 
   }

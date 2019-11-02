@@ -10,6 +10,9 @@
   width: 15%;
   @include removeSelection;
   transition: 0.2s;
+  @include less-than(tablet){
+    left: 10px;
+  }
 
   #logo {
     width: 100%;

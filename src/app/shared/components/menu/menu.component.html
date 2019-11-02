@@ -8,9 +8,9 @@
   </div>
 </div>
 <div id="menu-languages">
-  <div class="language" (click)="this.ls.setLanguage('bg')">BG</div>
-  <div class="language"(click)="this.ls.setLanguage('en')">EN</div>
+  <div class="language" (click)="this.ls.setLanguage('bg')" *ngIf="!this.menuOn">BG</div>
+  <div class="language"(click)="this.ls.setLanguage('en')"*ngIf="!this.menuOn">EN</div>
   <div id="menu-icon-container" (click)="toggleMenu()">
-    <img id="menu-icon" [src]="'assets/images/menu/menu-button.png'" alt="">
+    <img id="menu-icon" [src]="this.menuOn ? this.X_URL : this.SANDWICH_URL" alt="">
   </div>
 </div>

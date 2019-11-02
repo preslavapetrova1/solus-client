@@ -9,21 +9,17 @@ import {LanguagesService} from "../../../services/languages/languages.service";
 export class MenuComponent implements OnInit {
 
   menuOn: boolean;
+  X_URL: string;
+  SANDWICH_URL: string;
 
   constructor(public ls: LanguagesService) {
+    this.X_URL = 'assets/images/menu/close_icon.png';
+    this.SANDWICH_URL = 'assets/images/menu/menu-button.png';
   }
 
   ngOnInit() {
     this.menuOn = false;
 
-  //   window.addEventListener('scroll', ()=>{
-  //     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-  //       document.getElementById("menu-languages").style.width = "60px";
-  //       console.log("shrinked")
-  //     } else {
-  //       document.getElementById("menu0languages").style.width = "90px";
-  //     }
-  //   }, true)
   }
 
   toggleMenu() {
@@ -31,10 +27,6 @@ export class MenuComponent implements OnInit {
   }
 
   closeMenu() {
-    this.menuOn=false;
+    this.menuOn = false;
   }
-
-
-
-
 }

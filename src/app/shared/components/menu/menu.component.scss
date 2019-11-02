@@ -14,6 +14,12 @@
   color: #232323;
   @include removeDrag;
   @include removeSelection;
+  @include less-than(desktop){
+    display: flex;
+    flex-direction: column-reverse;
+    width: 30px;
+    right: 20px;
+  }
 
   .language{
     &:hover {
@@ -27,10 +33,13 @@
     #menu-icon {
       width: 30px;
       height: 30px;
+      @include less-than(desktop){
+        width: 20px;
+        height: 20px;
+      }
 
       &:hover {
         cursor: pointer;
-        opacity: 0.5;
       }
     }
   }

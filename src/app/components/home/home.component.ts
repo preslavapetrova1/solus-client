@@ -8,7 +8,6 @@ import {LanguagesService} from "../../services/languages/languages.service";
 })
 export class HomeComponent implements OnInit {
 
-  ASSETS_URL: string = 'assets/images/home/';
   constructor(public ls:LanguagesService) {
   }
 
