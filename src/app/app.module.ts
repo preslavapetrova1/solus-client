@@ -14,9 +14,10 @@ import {ProjectListComponent} from './shared/components/project-list/project-lis
 import {PhotoGalleryComponent} from './shared/components/photo-gallery/photo-gallery.component';
 import {PortfolioService} from './services/portfolio/portfolio.service';
 import {HttpClientModule} from '@angular/common/http';
-import { PreviewComponent } from './shared/components/photo-gallery/preview/preview.component';
-import { ProjectItemComponent } from './components/projects/project-item/project-item.component';
+import {PreviewComponent} from './shared/components/photo-gallery/preview/preview.component';
+import {ProjectItemComponent} from './components/projects/project-item/project-item.component';
 import {FormsModule} from "@angular/forms";
+import {LanguagesService} from "./services/languages/languages.service";
 
 @NgModule({
   declarations: [
@@ -33,14 +34,14 @@ import {FormsModule} from "@angular/forms";
     PhotoGalleryComponent,
     PreviewComponent,
     ProjectItemComponent,
-    ],
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
   ],
-  providers: [PortfolioService],
+  providers: [PortfolioService, LanguagesService],
   bootstrap: [AppComponent]
 })
 export class AppModule {

@@ -1,20 +1,20 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 import {ILanguage} from "./ILanguage";
 import {HttpClient} from "@angular/common/http";
 import {NavigationEnd, Router} from "@angular/router";
 import {filter, first} from "rxjs/operators";
+import {Observable} from "rxjs";
 
 
 @Injectable({
   providedIn: 'root'
 })
 export class LanguagesService {
-
   currentLanguage: ILanguage;
   currentLanguageKey: string;
   available: boolean;
   private initialLanguage: string;
-  private languages: { bg: ILanguage, en: ILanguage};
+  private languages: { bg: ILanguage, en: ILanguage };
 
   constructor(private http: HttpClient, private router: Router) {
     this.languages = {bg: null, en: null};
@@ -56,7 +56,8 @@ export class LanguagesService {
     }
   }
 
-  private getLanguage(key: string) {
+  // TODO: Every method that returns something should have a return type!
+  private getLanguage(key: string): Observable<ILanguage> {
     return this.http.get<ILanguage>('../assets/' + key + '.json');
   }
 

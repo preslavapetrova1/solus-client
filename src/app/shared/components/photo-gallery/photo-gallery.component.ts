@@ -7,7 +7,6 @@ import {Component, Input, OnInit} from '@angular/core';
   styleUrls: ['./photo-gallery.component.scss']
 })
 export class PhotoGalleryComponent implements OnInit {
-
   @Input() photosUrl: string;
   @Input() photosCount: number;
   galleryArray: Array<number>;

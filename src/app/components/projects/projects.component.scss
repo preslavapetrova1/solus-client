@@ -15,6 +15,7 @@
     left: 0;
     width: 100vw;
     height: 100vh;
+    // TODO: Refactor
     background: url("http://solusdesign.com/wp-content/uploads/2014/12/dsc_0021-1.jpg") no-repeat fixed center;
     background-size: cover;
     @include removeDrag;

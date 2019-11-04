@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {LanguagesService} from "../../services/languages/languages.service";
 
 @Component({
@@ -6,12 +6,8 @@ import {LanguagesService} from "../../services/languages/languages.service";
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent {
 
-  constructor(public ls:LanguagesService) {
+  constructor(public ls: LanguagesService) {
   }
-
-  ngOnInit() {
-  }
-
 }

@@ -5,7 +5,9 @@
       <p>{{this.ls.translate('ABOUT_COVER')}}</p>
     </div>
   </div>
+  <!--  TODO: Where is the first window?-->
   <div id="second-window">
+    <!--    TODO: where is ABOUT_COVER1? also should be _1-->
     <p>{{this.ls.translate('ABOUT_COVER2')}}</p>
   </div>
   <div id="our-partners" *ngIf="partnerService.partners">
@@ -14,7 +16,7 @@
       <div id="column" *ngFor="let column of partnerService.partners">
         {{column.key}}
         <div id="logos" *ngFor="let partner of column.partners; let i = index" (click)="redirect(partner)">
-          <img [src]="column.imgUrl+i+'.jpg'" alt="" >
+          <img [src]="column.imgUrl+i+'.jpg'" alt="">
         </div>
       </div>
     </div>

@@ -19,7 +19,6 @@ export class LogoComponent implements OnInit {
     window.addEventListener('scroll', ()=>{
       if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
         document.getElementById("logo-container").style.width = "8%";
-        console.log("shrinked")
       } else {
         document.getElementById("logo-container").style.width = "15%";
       }

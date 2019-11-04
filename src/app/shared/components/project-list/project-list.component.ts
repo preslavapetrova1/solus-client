@@ -26,6 +26,8 @@ export class ProjectListComponent implements OnInit {
   }
 
   getProjectByKey(id: string){
+
+    // TODO: Be consistent with other if/else if statements (else if should be on the same line as })
     if (id === "boutique"){
       return "BOUTIQUE_RESIDENCE";
     }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {LanguagesService} from "../../services/languages/languages.service";
 
 @Component({
@@ -8,16 +8,15 @@ import {LanguagesService} from "../../services/languages/languages.service";
 })
 export class ContactsComponent implements OnInit {
 
-  constructor(public ls: LanguagesService) { }
-
-
+  constructor(public ls: LanguagesService) {
+  }
 
   ngOnInit() {
   }
 
-  redirectToFcb(){
-
-    const fcbUrl = "https://www.facebook.com/solusdesignvarna/"
+  redirectToFcb() {
+    // TODO: this is not where constants should be placed
+    const fcbUrl = "https://www.facebook.com/solusdesignvarna/";
     window.open(fcbUrl, "_blank");
   }
 

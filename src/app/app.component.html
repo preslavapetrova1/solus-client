@@ -1,5 +1,8 @@
 <div id="page-content">
-  <router-outlet *ngIf="this.ps.portfolio && this.ls.available" ></router-outlet>
+<!--  TODO: Remove "this" from html everywhere-->
+<!--  TODO: Remove all spec.ts files-->
+<!--  TODO: delete cmspage folder-->
+  <router-outlet *ngIf="this.ps.portfolio && this.ls.available"></router-outlet>
 </div>
 <app-logo></app-logo>
 <app-menu *ngIf="this.ls.available"></app-menu>

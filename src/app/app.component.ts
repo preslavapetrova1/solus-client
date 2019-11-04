@@ -7,11 +7,7 @@ import {LanguagesService} from "./services/languages/languages.service";
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-
 export class AppComponent {
-  title = 'solus-site';
-
   constructor(public ps: PortfolioService, public ls: LanguagesService) {
   }
-
 }
