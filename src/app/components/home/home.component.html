@@ -1,14 +1,12 @@
 <div id="wrapper">
   <header id="frontPage">
     <div id="site-title">
-      <h1>{{this.ls.translate('HOME_COVER')}}</h1>
+      <h1>{{ls.translate('HOME_COVER')}}</h1>
     </div>
-<!--    TODO: Check error when redirecting-->
-    <a href="" class="btn" routerLink="/projects">{{this.ls.translate('HOME_COVER_BUTTON')}}</a>
+    <span href="" class="btn" >{{ls.translate('HOME_COVER_BUTTON')}}</span>
   </header>
-<!--  TODO: where is section A?-->
-  <div id="section-b">
-    <h3>{{this.ls.translate('SELECTED_PROJECTS')}}</h3>
+  <div id="project-container">
+    <h3>{{ls.translate('SELECTED_PROJECTS')}}</h3>
     <app-project-list></app-project-list>
   </div>
   <app-footer></app-footer>

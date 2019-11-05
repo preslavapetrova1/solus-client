@@ -1,13 +1,13 @@
 <div id="wrapper">
   <div id="cover">
-    <img [src]="'assets/images/projects/'+this.project.id+'/cover.jpg'" alt="">
+    <img [src]="'assets/images/projects/'+project.id+'/cover.jpg'" alt="">
     <div id="text-box">
-      <h1>{{this.ls.translate(this.getProjectByKey())}}</h1>
+      <h1>{{ls.translate(getProjectByKey())}}</h1>
     </div>
   </div>
   <div id="photo-container">
-    <app-photo-gallery [photosCount]="this.project.photosCount" [photosUrl]="'assets/images/projects/'
-        +this.project.id+'/'"></app-photo-gallery>
+    <app-photo-gallery [photosCount]="project.photosCount" [photosUrl]="'assets/images/projects/'
+        +project.id+'/'"></app-photo-gallery>
   </div>
   <app-footer></app-footer>
 </div>

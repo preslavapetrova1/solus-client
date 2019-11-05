@@ -56,10 +56,9 @@
       position: center;
       height:90%;
       width: auto;
-      @include less-than(tablet){
+      @include less-than(desktop){
         width: 70%;
         height: auto;
-
       }
     }
   }

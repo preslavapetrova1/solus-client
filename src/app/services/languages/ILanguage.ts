@@ -10,7 +10,7 @@ export interface ILanguage {
   PROJECTS_SELECTED_PROJECTS: string;
   GALLERY: string;
   ABOUT: string;
-  ABOUT_COVER: string;
+  ABOUT_COVER1: string;
   ABOUT_COVER2: string;
   ABOUT_PARTNERS: string;
   CONTACTS: string;

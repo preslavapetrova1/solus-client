@@ -9,7 +9,7 @@
   display: flex;
   flex-direction: column;
 
-  #about-us {
+  #about-us-window1 {
     position: relative;
     top: 0;
     left: 0;
@@ -43,7 +43,7 @@
     }
   }
 
-  #second-window {
+  #about-us-window2 {
     position: relative;
     top: 0;
     left: 0;
@@ -94,13 +94,13 @@
 
     #grid {
       position: relative;
-      top: 200px;
+      top: 150px;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
       align-items: flex-start;
-      width: 60%;
+      width: 70%;
       margin-bottom: 150px;
       @include center(true, false);
 
@@ -110,9 +110,10 @@
         justify-content: center;
         align-items: center;
         margin-right: 30px;
-        width: 100px;
+        width: 180px;
         font-size: 1.2em;
         font-weight: bolder;
+        text-transform: uppercase;
         margin-top: 50px;
 
         #logos {

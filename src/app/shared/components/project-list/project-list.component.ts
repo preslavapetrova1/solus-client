@@ -27,20 +27,13 @@ export class ProjectListComponent implements OnInit {
 
   getProjectByKey(id: string){
 
-    // TODO: Be consistent with other if/else if statements (else if should be on the same line as })
     if (id === "boutique"){
       return "BOUTIQUE_RESIDENCE";
-    }
-
-    else if(id === "peach-garden"){
+    } else if(id === "peach-garden"){
       return "PEACH_GARDEN";
-    }
-
-    else if(id === "saint-nicholas"){
+    } else if(id === "saint-nicholas"){
       return "SAINT_NICHOLAS";
-    }
-
-    else if(id === "viva4"){
+    } else if(id === "viva4"){
       return "VIVA4";
     }
   }

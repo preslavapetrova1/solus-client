@@ -1,17 +1,15 @@
 <div id="wrapper">
-  <div id="about-us">
+  <div id="about-us-window1">
     <div id="text-about-us">
-      <h3>{{this.ls.translate('ABOUT')}}</h3>
-      <p>{{this.ls.translate('ABOUT_COVER')}}</p>
+      <h3>{{ls.translate('ABOUT')}}</h3>
+      <p>{{ls.translate('ABOUT_COVER1')}}</p>
     </div>
   </div>
-  <!--  TODO: Where is the first window?-->
-  <div id="second-window">
-    <!--    TODO: where is ABOUT_COVER1? also should be _1-->
-    <p>{{this.ls.translate('ABOUT_COVER2')}}</p>
+  <div id="about-us-window2">
+    <p>{{ls.translate('ABOUT_COVER2')}}</p>
   </div>
   <div id="our-partners" *ngIf="partnerService.partners">
-    <h3>{{this.ls.translate('ABOUT_PARTNERS')}}</h3>
+    <h3>{{ls.translate('ABOUT_PARTNERS')}}</h3>
     <div id="grid">
       <div id="column" *ngFor="let column of partnerService.partners">
         {{column.key}}
